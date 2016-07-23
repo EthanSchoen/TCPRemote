@@ -161,6 +161,7 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="Kje-Si-c7x"/>
@@ -191,6 +192,9 @@
                                 <include reference="Hk8-gx-11K"/>
                             </mask>
                         </variation>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="23g-cv-8pT" appends="YES" id="N8d-Mh-mnw"/>
+                        </connections>
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
@@ -202,6 +206,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="23g-cv-8pT">
+                    <connections>
+                        <action selector="tap:" destination="BYZ-38-t0r" id="HNT-nu-42x"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-184.5" y="-314.25"/>
         </scene>

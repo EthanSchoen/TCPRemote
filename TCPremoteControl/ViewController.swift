@@ -36,6 +36,11 @@ class ViewController: UIViewController, NSStreamDelegate {
         }
     }
     
+    
+    @IBAction func tap(sender: AnyObject) {
+        self.view.endEditing(true)
+    }
+    
     func stream(aStream: NSStream, handleEvent eventCode: NSStreamEvent) {
         if aStream === inputStream {
             switch eventCode {
